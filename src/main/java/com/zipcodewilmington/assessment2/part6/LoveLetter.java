@@ -30,12 +30,42 @@ int locationInAlphabet;
 
                     resultArr[i] = distance;
                 }
-
-
             }
-
-
         }
         return resultArr;
     }
+
+//    public Integer[] mystery(String[] input) {
+//        Integer[] result = new Integer[input.length];
+//        int index = 0;
+//        for(int i = 0; i < input.length; i++) {
+//            if(!isPalindromic(input[i])){
+//                 input[i].charAt(i)
+//            index++;
+//            } else {
+//                result[index] = 0;
+//                index++;
+//            }
+//        }
+//        return result;
+//    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

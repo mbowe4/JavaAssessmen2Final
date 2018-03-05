@@ -26,13 +26,14 @@ int locationInAlphabet;
             if (!isPalindromic(input[i])) {
                 int halfWayPoint = (int) Math.floor(input[i].length() / 2);
                 for(int j = halfWayPoint; j < input[i].length(); j++) {
-                    distance = (input[i].charAt(j) - getAlphabetIndex(input[i].charAt(j)));
-                    //resultArr[i] = distance;
+                    distance = (getAlphabetIndex(input[i].charAt(i)) - getAlphabetIndex(input[i].charAt(j)));
+
+                    resultArr[i] = distance;
                 }
 
 
             }
-            resultArr[i] = distance;
+
 
         }
         return resultArr;

@@ -24,27 +24,6 @@ public class ElectionLand {
     }
 
 
-//    public static String getMostCommon(String[] votes) {
-//        HashMap<String, Integer> numOcc = new HashMap<>();
-//        Arrays.sort(votes, Collections.reverseOrder());
-//
-//        int index = 0;
-//        for (String name : votes) {
-//            numOcc.put(votes[index], getNumberOfOccurrences(votes, name));
-//            index++;
-//        }
-//
-//        int highestNumOccs = 0;
-//        String numOccuringMost = "";
-//        for (String name : votes) {
-//            if (numOcc.get(name) > highestNumOccs) {
-//                numOccuringMost = name;
-//            }
-//        }
-//        return numOccuringMost;
-//    }
-
-
     public String electionWinner(String[] votes) {
         HashMap<String, Integer> numOcc = new HashMap<>();
         //Arrays.sort(votes, Collections.reverseOrder());

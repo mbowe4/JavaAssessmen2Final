@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //<<<<<<< HEAD
 ////<<<<<<< HEAD
 ////
@@ -55,3 +56,4 @@
 ////public class ProjectTestSuite {
 ////}
 //>>>>>>> part6
+

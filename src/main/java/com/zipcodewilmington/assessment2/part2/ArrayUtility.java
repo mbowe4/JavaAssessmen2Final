@@ -13,6 +13,6 @@ public class ArrayUtility<T> {
                 counter++;
             }
         }
-        return counter;
+        return null;
     }
 }

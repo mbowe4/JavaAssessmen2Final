@@ -20,7 +20,7 @@ public enum RockPaperScissors {
             case ROCK:
                 return RockPaperScissors.PAPER;
             case PAPER:
-                return RockPaperScissors.ROCK;
+                return RockPaperScissors.SCISSORS;
             case SCISSORS:
                 return RockPaperScissors.ROCK;
         }
@@ -34,7 +34,7 @@ public enum RockPaperScissors {
             case PAPER:
                 return RockPaperScissors.ROCK;
             case SCISSORS:
-                return RockPaperScissors.ROCK;
+                return RockPaperScissors.PAPER;
         }
         return null;
     }
@@ -46,6 +46,6 @@ public enum RockPaperScissors {
     public RockPaperScissors getLosingSign() {
         return findLosingSign(RockPaperScissors.ROCK);
     }
-//
+
 
 }

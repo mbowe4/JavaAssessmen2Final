@@ -1,9 +1,9 @@
 package com.zipcodewilmington.assessment2.part3;
 
 public enum RockPaperScissors {
-    ROCK("Scissors", "Paper"),
-    PAPER("Rock", "Scissors" ),
-    SCISSORS("Paper", "Rock"),
+    ROCK("Paper", "Scissors"),
+    PAPER("Scissors", "Rock" ),
+    SCISSORS("Rock", "Paper"),
     ;
 
     private String winningSign;
@@ -15,24 +15,37 @@ public enum RockPaperScissors {
         this.losingSign = losingSign;
     }
 
-    public RockPaperScissors getRockLosingSign() {
-        return SCISSORS;
+    public RockPaperScissors findWinningSign(RockPaperScissors input) {
+        switch (input) {
+            case ROCK:
+                return RockPaperScissors.PAPER;
+            case PAPER:
+                return RockPaperScissors.ROCK;
+            case SCISSORS:
+                return RockPaperScissors.ROCK;
+        }
+        return null;
     }
 
-    public RockPaperScissors getRockWinningSign() {
-        return PAPER;
+    public RockPaperScissors findLosingSign(RockPaperScissors input) {
+        switch (input) {
+            case ROCK:
+                return RockPaperScissors.SCISSORS;
+            case PAPER:
+                return RockPaperScissors.ROCK;
+            case SCISSORS:
+                return RockPaperScissors.ROCK;
+        }
+        return null;
     }
 
     public RockPaperScissors getWinningSign() {
-        switch (new RockPaperScissors) {
+        return findWinningSign(RockPaperScissors.ROCK);
 
-        }
     }
-
     public RockPaperScissors getLosingSign() {
-
-        return RockPaperScissors.SCISSORS;
+        return findLosingSign(RockPaperScissors.ROCK);
     }
-
+//
 
 }

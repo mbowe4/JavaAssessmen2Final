@@ -8,6 +8,7 @@ public class WuTangConcatenator {
     }
 
     public boolean isWu() {
+
         return input % 3 ==0;
     }
 
@@ -17,5 +18,6 @@ public class WuTangConcatenator {
 
     public boolean isWuTang() {
         return input % 3 == 0 && input % 5 ==0;
+
     }
 }
